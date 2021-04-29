@@ -1,0 +1,119 @@
+/* background */
+.background_1{
+    position:fixed;
+    opacity:.5;
+    /* z-index: -1; */
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {  
+    font-family: "EB Garamond";  
+    src:url(../fonts/EBGaramond-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    font-family:"EB Garamond",garamond,serif;
+    font-size:16px;
+    --blue:#242c3e;
+    --footer_blue:#252c3e;
+    --header_orange:#ec9614;
+    /* --yellow:#ffa600; */
+    /* --orange:#fe5b00; */
+    --white:#ffffff;
+    --blue_white:#f2f4f4;
+}
+
+/* body */
+
+body{
+    width:100vw;
+    
+}
+
+/* header CSS */
+.header{
+    width:100vw;
+    height:10vh;
+    background-color:var(--blue);
+    color:var(--white);
+    font-size:1.5rem;
+    font-family: inherit;
+    position:fixed;
+    top:0;
+}
+
+.logo{
+   text-align: center;
+  
+}
+
+.span{
+    font-size: 1rem;
+    color:var(--header_orange);
+}
+
+
+/* main CSS */
+
+.main{
+    width:100vw;
+    margin:11vh 0;
+    background-color: var(--blue_white);
+}
+
+.cover_image{
+    max-width:250px;
+    max-height:400px;
+    display:block;
+    margin: 2rem auto 0 auto;
+}
+
+.button{
+    width:100vw;
+    height:60px;
+    margin:0 auto;
+    font-family:inherit;
+    font-size:16px;
+    font-weight: 900;
+    display:block;
+    margin: 2rem auto 0 auto;
+    color:var(--white);
+    border:none;
+    outline:none;
+    background-color:var(--header_orange);
+    cursor: pointer;
+    position:fixed;
+    bottom:0;
+}
+
+.message{
+    font-size:1.2rem;
+    margin:2rem 2rem ;
+}
+
+
+
+/* footer CSS */
+
+.footer{
+    width:100vw;
+    height:20vh;
+    background-color:var(--footer_blue);
+}
+
+/* media queries */
+@media screen and (orientation: landscape) 
+{  
+.main, .header{
+    display:none;
+ }
+ 
+ body{
+    background-color:var(--footer_blue);
